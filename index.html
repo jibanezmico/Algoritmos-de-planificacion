@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Metodos de planificación</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-title">
+            <h1>Algoritmos de planificación</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><button id="FCFS">FCFS</button></li>
+                <li><button id="SJF">SJF</button></li>
+                <li><button id="SRTF">SRTF</button></li>
+                <li><button id="RR">RR</button></li>
+            </ul>
+        </nav>
+        <div class="input-data">
+            <div class="content-data">
+                <div class="content-input">
+                    <label for="name">Nombre del proceso</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="content-input">
+                    <label for="time"> Tiempo de llegada</label>
+                    <input type="number" name="time" id="time">
+                </div>
+                <div class="content-input">
+                    <label for="processing-time">Tiempo de procesamiento</label>
+                    <input type="number" name="processing-time" id="processing-time">
+                </div>
+                <div class="content-input">
+
+                </div>
+                <button id="save">Guardar</button>
+            </div>
+            <div class="content-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Tiempo de llegada</th>
+                            <th>Duración</th>
+                        </tr>
+                    </thead>
+                    <tbody id="t-body">
+                        <tr>
+                            <td colspan="3" align="center">Sin datos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="chart">
+            <canvas class="proccess" id="chart"></canvas>
+        </div>
+        <div class="summaryTable">
+            <table class="table" id="summaryTable">
+
+            </table>
+        </div>
+    </div>
+    <script type="module" src="assets/js/index.js"></script>
+</body>
+
+</html>
